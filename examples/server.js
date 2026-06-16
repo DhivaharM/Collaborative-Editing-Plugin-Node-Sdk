@@ -230,6 +230,6 @@ app.get('/health', function (req, res) {
 var server = http.createServer(app);
 Collaborative.attachToServer(server);
 
-server.listen(3000, function () {
+server.listen(3000, '0.0.0.0', function () {
   console.log('Example app + collaborative relay listening on port 3000');
 });
